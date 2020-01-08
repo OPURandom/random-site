@@ -311,6 +311,17 @@ a[data-fancybox] {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .gallery a[data-fancybox] img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*************************************************
  *  Pager.
  **************************************************/
@@ -366,6 +377,27 @@ a[data-fancybox] {
 .badge-light[href]:focus,
 .badge-light[href]:hover {
   background: rgba(0,0,0,.1);
+}
+
+.badge-tweet {
+  border: none;
+  color: rgba(0,0,0,.68);
+  background: rgba(0,0,0,.05);
+  font-weight: normal;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.article-tags > .badge-tweet:last-child {
+  margin-right: 0;
+}
+
+.badge-tweet[href]:focus,
+.badge-tweet[href]:hover {
+  background: #00ACEE;
+  color: white;
 }
 
 a.badge:focus,

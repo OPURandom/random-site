@@ -444,9 +444,9 @@ pre {
   overflow-y: scroll; }
 
 .container {
-  width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  width: 96%;
+  padding-right: 2%;
+  padding-left: 2%;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -463,9 +463,9 @@ pre {
       max-width: 1400px; } }
 
 .container-fluid {
-  width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  width: 96%;
+  padding-right: 2%;
+  padding-left: 2%;
   margin-right: auto;
   margin-left: auto; }
 
@@ -7288,6 +7288,14 @@ a[data-fancybox] {
   line-height: 1.5rem;
   text-align: center; }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-left: 15%;
+    padding-right: 15%; }
+  .gallery a[data-fancybox] img {
+    width: 100%;
+    height: auto; } }
+
 /*************************************************
  *  Pager.
  **************************************************/
@@ -7334,6 +7342,24 @@ a[data-fancybox] {
 .badge-light[href]:focus,
 .badge-light[href]:hover {
   background: rgba(0, 0, 0, 0.1); }
+
+.badge-tweet {
+  border: none;
+  color: rgba(0, 0, 0, 0.68);
+  background: rgba(0, 0, 0, 0.05);
+  font-weight: normal;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px; }
+
+.article-tags > .badge-tweet:last-child {
+  margin-right: 0; }
+
+.badge-tweet[href]:focus,
+.badge-tweet[href]:hover {
+  background: #00ACEE;
+  color: white; }
 
 a.badge:focus,
 a.badge:hover {
@@ -7890,8 +7916,18 @@ article {
 
 .article-container {
   max-width: 1400px;
-  padding: 0 70px 0 70px;
+  padding: 0 5% 0 5%;
   margin: 0 auto 0 auto; }
+
+@media screen and (max-width: 800px) {
+  .article-container {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+@media screen and (max-width: 500px) {
+  .article-container {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 .page-subtitle {
   font-size: 1.15rem;
@@ -8856,29 +8892,6 @@ div.icon-scale {
   height: 350px;
   width: 100%; }
 
-.tweet-box {
-  display: inline-block;
-  test-decoration: none;
-  font-weight: bold;
-  border: solid 3px #00ACEE;
-  width: 90px;
-  height: 90px;
-  border-radius: 9px;
-  line-height: 25px;
-  font-size: 1px;
-  margin-top: 0;
-  transition-duration: .1s;
-  background: #FFFFFF;
-  color: #00ACEE; }
-
-.tweet-box i {
-  padding-top: 16px;
-  font-size: 33px; }
-
-.tweet-box:hover {
-  background: #00ACEE;
-  color: white; }
-
 .my-side {
   width: 100%;
   display: flex; }
@@ -9072,7 +9085,7 @@ footer a.back-to-top i {
 @media only screen and (max-width: 768px) {
   .site-footer {
     width: 100%;
-    margin-top: 0;
+    margin-top: 20px;
     padding-top: 0;
     padding-bottom: 30px;
     position: relative;

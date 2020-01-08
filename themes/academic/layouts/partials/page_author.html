@@ -29,47 +29,23 @@
   {{ end }}
   {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
   <div class="media author-card content-widget-hr">
-    <div class="my-side">
-      {{ if and site.Params.gravatar .Params.email }}
-        <img class="portrait mr-3" src="https://s.gravatar.com/avatar/{{ md5 .Params.email }}?s=200')" alt="Avatar">
-      {{ else if $avatar }}
-        {{ $avatar_image := $avatar.Fill "250x250 Center" }}
-        <a href="{{$profile_url}}">
-          <div class="people-scale">
-            <img class="portrait mr-3" src="{{ $avatar_image.RelPermalink }}" alt="Avatar">
-          </div>
-        </a>
-      {{ end }}
-
-      <div class="media-body">
-        <h5 class="card-title"><a href="{{$profile_url}}">{{.Params.name}}</a></h5>
-        {{ with .Params.role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
-        {{ with .Params.bio }}<p class="card-text">{{. | markdownify | emojify}}</p>{{end}}
-        {{ partial "social_links" . }}
-      </div>
-    </div>
-    {{ if and site.Params.sharing (ne .Params.share false) }}
-      {{ range where site.Data.page_sharer.buttons "enable" true }}
-        {{ if eq .icon "twitter" }}
-          {{ $pack := or .icon_pack "fas" }}
-          {{ $pack_prefix := $pack }}
-          {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-            {{ $pack_prefix = "fa" }}
-          {{ end }}
-          {{ $link := replace .url "{url}" ($.Permalink | htmlEscape) }}
-          {{ $link = replace $link "{title}" ($.Title | htmlEscape) }}
-            <a href="{{$link|safeURL}}" target="_blank" rel="noopener" class="share-btn-{{.id}}">
-              <div class="tweet-box">
-                <center>
-                <i class="{{$pack}} {{$pack_prefix}}-{{.icon}}"></i>
-                <br>
-                記事を共有
-                </center>
-              </div>
-            </a>
-        {{ end }}
-      {{ end }}
+    {{ if and site.Params.gravatar .Params.email }}
+      <img class="portrait mr-3" src="https://s.gravatar.com/avatar/{{ md5 .Params.email }}?s=200')" alt="Avatar">
+    {{ else if $avatar }}
+      {{ $avatar_image := $avatar.Fill "250x250 Center" }}
+      <a href="{{$profile_url}}">
+        <div class="people-scale">
+          <img class="portrait mr-3" src="{{ $avatar_image.RelPermalink }}" alt="Avatar">
+        </div>
+      </a>
     {{ end }}
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="{{$profile_url}}">{{.Params.name}}</a></h5>
+      {{ with .Params.role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
+      {{ with .Params.bio }}<p class="card-text">{{. | markdownify | emojify}}</p>{{end}}
+      {{ partial "social_links" . }}
+    </div>
   </div>
 {{end}}{{/* Profile page block */}}
 {{end}}{{/* Show profile block */}}
