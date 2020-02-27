@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Set Bootstrap variables */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -7178,12 +7179,16 @@ code {
   background-color: #f9f2f4; }
 
 pre {
-  margin: 0 0 1rem 0;
+  margin: 0 -4em 1em -4em;
   background-color: #f8f8f8;
   /* Match default highlight theme. */
   border-color: #f8f8f8;
   font-size: 0.7rem;
   border-radius: 4px; }
+
+.hljs {
+  padding: 2em 3em !important;
+  margin-bottom: 1em; }
 
 pre code {
   white-space: pre;
@@ -8671,13 +8676,13 @@ ul.ul-edu li .description p.institution {
   position: relative; }
 
 .my-rest-child2 {
-  bottom: 15px;
+  bottom: 25px;
   right: 20px;
   position: absolute; }
 
 .my-portrait {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin: 0 auto;
   border-radius: 50%;
   object-fit: cover; }
@@ -9114,7 +9119,7 @@ footer a.back-to-top i {
     display: none; } }
 
 .article-style {
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 2; }
 
 .article-style h1,
@@ -9152,7 +9157,7 @@ footer a.back-to-top i {
   font-size: 1em; }
 
 pre code {
-  font-size: 1.6em; }
+  font-size: 1.1em; }
 
 /*************************************************
  *  Documentation layout
@@ -9473,3 +9478,25 @@ div.mermaid {
   width: 100%;
   text-align: center;
   margin-bottom: 1rem; }
+
+.my-project h1 {
+  color: white; }
+
+.my-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #bd3333;
+  /*ボタン色*/
+  color: #FFF;
+  border-width: 0px;
+  border-bottom: solid 4px #612222;
+  border-radius: 3px; }
+
+.my-button:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/ }

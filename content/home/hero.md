@@ -5,10 +5,10 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Welcome"
+title = "<img src='/img/footer.png'>"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "hero.png"
+# hero_media = "footer.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -17,27 +17,33 @@ hero_media = "hero.png"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  #color = "#D0D0D0"
+  # color = "#303030"
 
   # Background gradient.
-  # gradient_start = "#444444"
-  # gradient_end = "#777777"
+  gradient_start = "#994444"
+  gradient_end = "#777777"
 
   # Background image.
-  # image = ""  # Name of image in `static/img/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-  # image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
+  image = "back-c.jfif"  # Name of image in `static/img/`.
+  image_darken = 0.7  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
   # image_position = "center"  # Options include `left`, `center` (default), or `right`.
-  # image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
+  image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
 
   # Text color (true=light or false=dark).
-  text_color_light = false
+  text_color_light = true
 
 +++
 
-　  
-Computer House Randomへようこそ
+<div style="font-size : 0.8em; padding : 1.5em;">
 
-Randomはパソコンによる創作・プログラミング活動を行っている大阪府立大学の部活動です
+"Random" はパソコンによる創作・プログラミング活動を行っている
 
-[もっと詳しく](/about/)
+大阪府立大学の部活動です
+
+<br/>
+
+[<button class="my-button">➡　活動を詳しく！</button>](/about/)
+
+
+</div>

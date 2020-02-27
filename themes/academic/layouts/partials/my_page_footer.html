@@ -61,7 +61,7 @@
               {{ $person_page := site.GetPage $person_page_path }}
               {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
               {{ $avatar_image := $avatar.Fill "250x250 Center" }}
-              <div class="my-rest-child2">
+              <div class="my-rest-child2 icon-scale">
                 <a href="{{$person_page_path}}">
                   <img class="my-portrait" src="{{ $avatar_image.RelPermalink }}" alt="Avatar">
                 </a>

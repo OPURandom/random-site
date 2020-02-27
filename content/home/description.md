@@ -15,27 +15,21 @@ subtitle = "　"
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[feature]]
-  icon = "gamepad"
-  icon_pack = "fas"
+  path = "game.png"
   name = "ゲーム制作"
   description = "ゲームを作ります"
   link = "/tags/ゲーム制作/"
-  color = "blue"
   
 [[feature]]
-  icon = "laptop-code"
-  icon_pack = "fas"
+  path = "competitive_programming.png"
   name = "競技プログラミング"
   description = "AtCoderやICPCに出ます"
   link = "/tags/競技プログラミング/"
-  color = "grey"
   
 [[feature]]
-  icon = "music"
-  icon_pack = "fas"
+  path = "dtm.png"
   name = "DTM"
   description = "音楽を作ります"
   link = "/tags/dtm/"
-  color = "orange"
 
 +++

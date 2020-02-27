@@ -17,20 +17,17 @@
   {{ end }}
 
   {{ range $page.Params.feature }}
-  {{ $pack := or .icon_pack "fas" }}
-  {{ $pack_prefix := $pack }}
-  {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-    {{ $pack_prefix = "fa" }}
-  {{ end }}
-  {{ $color := .color }}
   <div class="col-12 col-sm-4">
     <div class="icon-scale">
-    <a href="{{ .link }}">
-      {{ with .icon }}<div class="featurette-icon" style="color:{{ $color }}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}"></i></div>{{ end }}
-    </a>
+      <a href="{{.link}}">
+        <img src="{{ printf "img/%s" .path | relURL }}" alt="">
+      </a>
     </div>
-    <h3>{{ .name | markdownify | emojify }}</h3>
-    <br>
+    <div style="margin: 20px 0 10px 0">
+      <a href="{{.link}}">
+        <h3>{{ .name | markdownify | emojify }}</h3>
+      </a>
+    </div>
     {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
   </div>
   {{ end }}
