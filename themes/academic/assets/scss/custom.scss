@@ -22,3 +22,16 @@ h1{
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+
+.my-box {
+  background-color: #313131;
+  width: 7em;
+  height: 0.2em;
+}
+
+.my-author-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 3em;
+  height: 0.2em;
+  margin: 3em 0 3em 0;
+}

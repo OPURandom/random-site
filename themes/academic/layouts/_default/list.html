@@ -3,12 +3,16 @@
 {{ partial "page_header.html" . }}
 
 <div class="my-footer-padding">
-  <div class="isotope projects-container">
-    {{ $paginator := .Paginate .Data.Pages }}
-    {{ range $paginator.Pages }}
-      {{ partial "li_card" .}}
-    {{ end }}
-  </div>
+  {{ if (and (eq .Type "tags") (eq .Title "Tags"))}}
+    {{ partial "my_tags" . }}
+  {{ else }}
+    <div class="isotope projects-container">
+      {{ $paginator := .Paginate .Data.Pages }}
+      {{ range $paginator.Pages }}
+        {{ partial "li_card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
 
 </div>
 

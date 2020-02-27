@@ -410,6 +410,21 @@ a.badge:hover {
   color: rgba(0,0,0,.68);
 }
 
+.tag-cloud {
+a {
+  color: #444444 !important;
+  margin: 0.3em;
+  padding: 0.5em;
+  background-color: #F3F3F3 !important;
+  // border-color: #444444;
+  border: 1px solid #444444;
+  border-radius: 0.2em;
+}
+a:hover {
+  box-shadow: 0px 2px 4px;
+}
+}
+/*
 .tag-cloud a {
   display: inline-block;
   position: relative;
@@ -432,6 +447,7 @@ a.badge:hover {
 .dark .tag-cloud a:hover {
   color: $sta-primary-light;
 }
+*/
 
 /*************************************************
  *  Button size override

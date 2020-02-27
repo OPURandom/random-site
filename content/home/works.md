@@ -25,7 +25,7 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = "works"
+    tag = "作品紹介"
     category = ""
     publication_type = ""
     exclude_featured = false
