@@ -89,7 +89,7 @@
     padding: 60px 0 60px 0;
   }
   .home-section:first-of-type {
-    padding-top: 40px;
+    padding-top: 10px;
   }
 }
 
@@ -432,11 +432,11 @@ ul.ul-edu li .description p.institution {
 
 .project-card {
   position: relative;
-  width: calc(33.3% - 2*20px); /* Fluid 3 columns (inc. 20px gutter) */
+  width: calc(33.3% - 15px); /* Fluid 3 columns (inc. 20px gutter) */
 }
 @media screen and (max-width: 1199px) {
   .project-card {
-    width: calc(50% - 20px); /* Fluid 2 columns (inc. 20px gutter) */
+    width: calc(50% - 12px); /* Fluid 2 columns (inc. 20px gutter) */
   }
 }
 @media screen and (max-width: 768px) {
@@ -1024,7 +1024,18 @@ footer a.back-to-top i {
   }
 }
 
+.mobile-half {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile-half {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .mobile-disable {
     display: none;
   }

@@ -12,7 +12,7 @@
 <br>
 
 <div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
+  <div class="mobile-half section-heading">
     {{ with $page.Content }}{{ . }}{{ end }}
 
     {{ if $page.Params.email_form }}
@@ -134,7 +134,7 @@
     </ul>
 
   </div>
-  <div class="col-12 col-lg-8">
+  <div class="mobile-half">
     {{ if and site.Params.map.engine $data.coordinates.latitude }}
     <div class="d-none">
       <input id="map-provider" value="{{ site.Params.map.engine }}">

@@ -7179,7 +7179,7 @@ code {
   background-color: #f9f2f4; }
 
 pre {
-  margin: 0 -4em 1em -4em;
+  margin: 0 -2rem 1rem -2rem;
   background-color: #f8f8f8;
   /* Match default highlight theme. */
   border-color: #f8f8f8;
@@ -8339,7 +8339,7 @@ ul.share li:hover i {
   .home-section {
     padding: 60px 0 60px 0; }
   .home-section:first-of-type {
-    padding-top: 40px; } }
+    padding-top: 10px; } }
 
 .section-heading h1 {
   margin: 0 0 10px 0; }
@@ -8619,12 +8619,12 @@ ul.ul-edu li .description p.institution {
 
 .project-card {
   position: relative;
-  width: calc(33.3% - 2*20px);
+  width: calc(33.3% - 15px);
   /* Fluid 3 columns (inc. 20px gutter) */ }
 
 @media screen and (max-width: 1199px) {
   .project-card {
-    width: calc(50% - 20px);
+    width: calc(50% - 12px);
     /* Fluid 2 columns (inc. 20px gutter) */ } }
 
 @media screen and (max-width: 768px) {
@@ -9129,7 +9129,16 @@ footer a.back-to-top i {
   .my-post-button {
     margin-top: 10px; } }
 
+.mobile-half {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 @media screen and (max-width: 768px) {
+  .mobile-half {
+    flex: 0 0 100%;
+    max-width: 100%; }
   .mobile-disable {
     display: none; } }
 
@@ -9497,6 +9506,10 @@ div.mermaid {
 .my-project h1 {
   color: white; }
 
+.my-project p {
+  font-size: 0.8em;
+  color: white; }
+
 .my-button {
   display: inline-block;
   padding: 0.5em 1em;
@@ -9519,10 +9532,14 @@ div.mermaid {
 .my-box {
   background-color: #313131;
   width: 7em;
-  height: 0.2em; }
+  height: 0.2em;
+  margin-bottom: 2em; }
 
 .my-author-box {
   background-color: rgba(0, 0, 0, 0.6);
   width: 3em;
   height: 0.2em;
   margin: 3em 0 3em 0; }
+
+.my-divider {
+  padding: 20px 0px 0px 0px; }

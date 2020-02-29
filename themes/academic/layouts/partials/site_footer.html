@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer" {{ if .Page.IsHome }}style="margin: 0 !important"{{end}}>
   <div class="my-footer">
     <div class="my-footer-image">
       <a href="/">
@@ -72,8 +72,8 @@
         </a>
       </dd>
       <dd class="my-footer-dd">
-        <a href="/tags/LT会/">
-          <div class="my-footer-text">LT会</div>
+        <a href="/tags/">
+          <div class="my-footer-text">タグ一覧</div>
         </a>
       </dd>
     </dl>
