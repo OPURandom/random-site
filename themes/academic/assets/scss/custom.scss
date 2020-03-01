@@ -82,27 +82,18 @@ p{
   flex-grow: 1;
 }
 
-// .arrow1{
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 20px;
-//   height: 20px;
-//   border: 3px solid;
-//   // border-color:  transparent transparent #565656 #565656;
-//   border-color:  transparent transparent white white;
-//   transform: rotate(-45deg);
-// }
-//
-// .item_text {
-//   animation: key1 .3s ease infinite alternate;
-// }
-//
-// @keyframes key1 {
-//   0% {
-//     transform: translateY(0px) rotate(-45deg);
-//   }
-//
-//   100% {
-//     transform: translateY(-5px) rotate(-45deg);
-//   }
-// }
+.over-image {
+// z-index: 1000;
+padding: 0px !important;
+// border-bottom: 1em solid lightgrey;
+
+h1 {
+  opacity: 0;
+  height: 0px;
+}
+.container {
+  position: relative;
+  top: -8rem;
+  margin-bottom: -6em;
+}
+}
