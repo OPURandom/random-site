@@ -49,6 +49,12 @@ p{
   border-right: solid 0.05em silver;
 }
 
+@media screen and (max-width: 992px) {
+  .my-right-dividor {
+    border-right: solid 0 silver;
+  }
+}
+
 .tag-cloud {
   display: flex;
   justify-content: flex-start;
