@@ -33,9 +33,15 @@
         {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
 
         {{ range $person.organizations }}
+
+        {{ $grade := "OB" }}
+        {{ if eq .enrollment ((now.AddDate 0 -3 0).Format "2006") }} {{ $grade = "1回" }} {{ end }}
+        {{ if eq .enrollment ((now.AddDate -1 -3 0).Format "2006") }} {{ $grade = "2回" }} {{ end }}
+        {{ if eq .enrollment ((now.AddDate -2 -3 0).Format "2006") }} {{ $grade = "3回" }} {{ end }}
+        {{ if eq .enrollment ((now.AddDate -3 -3 0).Format "2006") }} {{ $grade = "4回" }} {{ end }}
         <h3>
           {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-          <span>{{ .name }}</span>
+            <div class="my-organizations">{{ .name }} {{ $grade }}</div>
           {{ if .url }}</a>{{ end }}
         </h3>
         {{ end }}

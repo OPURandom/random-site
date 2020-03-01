@@ -9543,6 +9543,20 @@ div.mermaid {
 .my-divider {
   padding: 20px 0px 0px 0px; }
 
+.my-organizations {
+  background-color: #5a5a5a;
+  color: white;
+  display: inline-block;
+  padding: 7px;
+  font-weight: 500; }
+
+.my-organizations {
+  background-color: #5a5a5a;
+  color: white;
+  display: inline-block;
+  padding: 7px;
+  font-weight: 500; }
+
 .my-right-dividor {
   border-right: solid 0.05em silver; }
 
@@ -9557,3 +9571,12 @@ div.mermaid {
 
 .tag-cloud a {
   flex-grow: 1; }
+
+.over-image {
+  padding: 0px !important; }
+  .over-image h1 {
+    opacity: 0;
+    height: 0px; }
+  .over-image .container {
+    position: relative;
+    top: -5rem; }

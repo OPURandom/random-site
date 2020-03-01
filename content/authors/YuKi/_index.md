@@ -8,8 +8,9 @@ authors:
 # [必須] folder名を書く これをミスると部員紹介ページがバグる
 
 organizations:
-- name: 情報工学課程3回 # 所属名
+- name: "情報工学課程"
   url: ""
+  enrollment: "2017"
 
 bio: 情報3回 Unityすき。
 # [必須] short bio  blogの下や部員紹介ページで表示

@@ -45,8 +45,26 @@
   padding: 20px 0px 0px 0px;
 }
 
+.my-organizations {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  display: inline-block;
+  padding: 7px;
+  font-weight: 500;
+}
+
+.my-organizations {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  display: inline-block;
+  padding: 7px;
+  font-weight: 500;
+}
 .my-right-dividor {
   border-right: solid 0.05em silver;
+}
+
+.my-contact-padding {
 }
 
 @media screen and (max-width: 992px) {
@@ -97,7 +115,6 @@
 #profile {
   background-color: white;
 }
-
 #profile-text {
   padding: 3em !important;
 }

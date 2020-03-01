@@ -8,8 +8,9 @@ authors:
 # [必須] folder名を書く これをミスると部員紹介ページがバグる
 
 organizations:
-- name: 情報工学課程2回 # 所属名
+- name: "情報工学課程"
   url: ""
+  enrollment: "2018"
 
 bio: "競プロ(AtCoder: pngn, 黄色)やWeb、アプリなどの開発が趣味です。Flutterはいいぞ。VimとUbuntuとzshは三種の神器。"
 
