@@ -8796,7 +8796,8 @@ ul.ul-edu li .description p.institution {
   /* Remove default card margin and use Isotope gutter */ }
 
 .padding-a-little {
-  padding-top: 2.5px; }
+  padding-top: 2.5px;
+  display: inline-block; }
 
 /*************************************************
  *  Accomplishments
@@ -9542,6 +9543,13 @@ div.mermaid {
 
 .my-divider {
   padding: 20px 0px 0px 0px; }
+
+.my-organizations {
+  background-color: #5a5a5a;
+  color: white;
+  display: inline-block;
+  padding: 7px;
+  font-weight: 500; }
 
 .my-organizations {
   background-color: #5a5a5a;
