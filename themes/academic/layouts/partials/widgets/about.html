@@ -35,7 +35,7 @@
         {{ range $person.organizations }}
         <h3>
           {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-          <span>{{ .name }}</span>
+          <div class="my-organizations">{{ .name }}</div>
           {{ if .url }}</a>{{ end }}
         </h3>
         {{ end }}

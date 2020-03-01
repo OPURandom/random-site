@@ -9543,6 +9543,12 @@ div.mermaid {
 .my-divider {
   padding: 20px 0px 0px 0px; }
 
+.my-organizations {
+  background-color: #5a5a5a;
+  color: white;
+  display: inline-block;
+  padding: 7px; }
+
 .my-right-dividor {
   border-right: solid 0.05em silver; }
 
