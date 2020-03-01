@@ -1,13 +1,13 @@
 // Override this file to add your own SCSS styling.
 
 .my-project {
-h1{
-  color: white;
-}
-p{
-  font-size: 0.8em;
-  color: white;
-}
+  h1{
+    color: white;
+  }
+  p{
+    font-size: 0.8em;
+    color: white;
+  }
 }
 
 .my-button {
@@ -63,19 +63,45 @@ p{
 .tag-cloud a {
   flex-grow: 1;
 }
+.tag-cloud i {
+  margin-right: 0.1em;
+}
 
 .over-image {
-// z-index: 1000;
-padding: 0px !important;
-// border-bottom: 1em solid lightgrey;
+  padding: 0px !important;
 
-h1 {
-  opacity: 0;
-  height: 0px;
+  h1 {
+    opacity: 0;
+    height: 0px;
+  }
+
+  .container {
+    position: relative;
+    top: -8rem;
+    margin-bottom: -6em;
+  }
 }
-.container {
-  position: relative;
-  top: -8rem;
-  margin-bottom: -6em;
+
+#profile-page {
+  background: lightgray;
+  padding-bottom: 4em;
+
+  .container {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: white;
+    border-radius: 0.4em;
+  }
 }
+
+#profile {
+  background-color: white;
+}
+
+#profile-text {
+  padding: 3em !important;
+}
+
+.paper-shadow {
+  box-shadow: 1px 10px 10px gray;
 }
