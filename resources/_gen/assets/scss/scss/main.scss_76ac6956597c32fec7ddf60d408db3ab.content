@@ -9579,5 +9579,4 @@ div.mermaid {
     height: 0px; }
   .over-image .container {
     position: relative;
-    top: -8rem;
-    margin-bottom: -6em; }
+    top: -5rem; }
