@@ -19,6 +19,7 @@ lastmod: "2020-01-03T00:00:00Z"
 # [必須] 今日の日付を入れよう(これを元に最新記事取ってきてるはず)
 featured: false # ???
 draft: false # true にすると非表示になる
+top_show: true
 
 # [必須] 同一フォルダにfeatured.jpg/pngを入れて! 絶対!
 

@@ -1,0 +1,46 @@
+{{/* Pages Widget */}}
+
+{{/* Initialise */}}
+{{ $ := .root }}
+{{ $st := .page }}
+{{ $items_type := $st.Params.content.page_type | default "post" }}
+{{ $items_offset := $st.Params.content.offset | default 0 }}
+{{ $items_count := 65535 }}
+{{ $items_sort := $st.Params.content.order | default "desc" }}
+
+{{/* Query */}}
+{{ $query := where site.RegularPages "Type" $items_type }}
+{{ $archive_page := site.GetPage "Section" $items_type }}
+
+{{ $count := len $query }}
+
+{{/* Sort */}}
+{{ $sort_by := "Date" }}
+{{ $query = sort $query $sort_by $items_sort }}
+
+{{/* Offset and Limit */}}
+{{ if gt $items_offset 0 }}
+  {{ $query = first $items_count (after $items_offset $query) }}
+{{ else }}
+  {{ $query = first $items_count $query }}
+{{ end }}
+
+<div class="margin-auto">
+  <div class="center-text">
+    <h1>{{ with $st.Title }}{{ . | markdownify | emojify }}{{ end }}</h1>
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+  </div>
+  <br>
+  <div class="isotope projects-container">
+
+    {{ with $st.Content }}{{ . }}{{ end }}
+
+    {{ range $index, $post := $query }}
+      {{ if $post.Params.top_show }}
+        {{ partial "li_card" . }}
+      {{ end }}
+    {{end}}
+
+
+  </div>
+</div>

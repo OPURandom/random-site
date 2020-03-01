@@ -9543,3 +9543,11 @@ div.mermaid {
 
 .my-divider {
   padding: 20px 0px 0px 0px; }
+
+.tag-cloud {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.tag-cloud a {
+  flex-grow: 1; }
