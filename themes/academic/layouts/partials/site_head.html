@@ -199,7 +199,11 @@
   {{ partial "custom_head" . }}
 
   <title>{{ if not .IsHome }}
-    {{ if (and (eq .Page.Type "authors") (ne .Page.File.Dir "authors/")) }}
+    {{ $dir := "" }}
+    {{ with .Page.File }}
+      {{ $dir = .Dir }}
+    {{ end }}
+    {{ if (and (eq .Page.Type "authors") (ne $dir "authors/")) }}
       {{ .Params.name }}
     {{ else }}
       {{ .Title }}
