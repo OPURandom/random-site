@@ -18,7 +18,7 @@
 
 <!-- About widget -->
 <div class="row">
-  <div class="col-12 col-lg-4">
+  <div class="col-12 col-lg-4 my-right-dividor">
     <div id="profile">
 
       {{ if site.Params.gravatar }}
@@ -73,7 +73,7 @@
     {{ if and $page.Params.widget $page.Title }}<h1>{{ $page.Title | markdownify | emojify }}</h1>{{ end }}
 
     <div class="article-style">
-      {{ $person_page.Content }}
+      {{ $person_page.Params.bio }}
     </div>
 
     <div >
@@ -83,7 +83,7 @@
         <h4>{{ i18n "interests" | markdownify }}</h4>
         <ul>
           {{ range . }}
-          <li>{{ . | markdownify | emojify }}</li>
+          <li><a href="/tags/{{.}}/" style="color: rgba(0, 0, 0, 0.8)">{{ . }}</a></li>
           {{ end }}
         </ul>
       </div>

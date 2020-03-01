@@ -9536,13 +9536,15 @@ div.mermaid {
   margin-bottom: 2em; }
 
 .my-author-box {
-  background-color: rgba(0, 0, 0, 0.6);
   width: 3em;
   height: 0.2em;
   margin: 3em 0 3em 0; }
 
 .my-divider {
   padding: 20px 0px 0px 0px; }
+
+.my-right-dividor {
+  border-right: solid 0.05em silver; }
 
 .tag-cloud {
   display: flex;

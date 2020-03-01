@@ -11,8 +11,7 @@ organizations:
 - name: 情報工学課程2回 # 所属名
   url: ""
 
-bio: 情報2回 競プロやアプリ開発が趣味です。
-# [必須] short bio  blogの下や部員紹介ページで表示
+bio: "競プロ(AtCoder: pngn, 黄色)やWeb、アプリなどの開発が趣味です。Flutterはいいぞ。VimとUbuntuとzshは三種の神器。"
 
 interests: # 興味がある分野 書かないとデザイン的にアンバランスになるけどいらないよなぁ
 - 競技プログラミング
@@ -31,8 +30,4 @@ social: # SNS 不要なら削除
   icon_pack: fas
   link: 'mailto:kada.random@gmail.com'  # For a direct email link, use "mailto:test@example.org".
 
-# [必須] ↓ 自己紹介(長文) bioと同じでいいよ
 ---
-普段は競プロ(C++)をしてます。AtCoderのIDは[pngn](https://atcoder.jp/users/pngn)です。青と黄色の間を行ったり来たりしています。  
-最近は趣味でflutterでアプリ開発したり、Hugoをいじってます。  
-好きなOSはUbuntu!好きなシェルはzsh!好きなエディタはVimです!  

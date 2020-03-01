@@ -198,6 +198,12 @@
 
   {{ partial "custom_head" . }}
 
-  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  <title>{{ if not .IsHome }}
+    {{ if (and (eq .Page.Type "authors") (ne .Page.Dir "authors/")) }}
+      {{ .Params.name }}
+    {{ else }}
+      {{ .Title }}
+    {{ end }}
+    | {{ end }}{{ site.Title }}</title>
 
 </head>
