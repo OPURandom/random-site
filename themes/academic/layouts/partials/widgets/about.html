@@ -18,8 +18,8 @@
 
 <!-- About widget -->
 <div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile" class="">
+  <div class="col-12 col-lg-4 my-right-dividor">
+    <div id="profile">
 
       {{ if site.Params.gravatar }}
       <img class="portrait" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=200')" alt="Avatar">
@@ -72,8 +72,8 @@
 
     </div>
   </div>
-  <div id="profile-text" class="col-12 col-lg-8" style="padding: 0em 2em 0 2em">
-    <!-- <div class="my-author-box mobile-disable"></div> -->
+  <div class="col-12 col-lg-8" style="padding: 0em 2em 0 2em">
+    <div class="my-author-box mobile-disable"></div>
 
     {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
     {{ if and $page.Params.widget $page.Title }}<h1>{{ $page.Title | markdownify | emojify }}</h1>{{ end }}
