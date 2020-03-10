@@ -101,7 +101,8 @@
   box-shadow: none;
   border: none;
   margin-bottom: 20px !important;
-  background-color: rgba(256, 256, 256, 0.8);
+  // background-color: rgba(256, 256, 256, 0.8);
+  background: white;
   // border-bottom: 1px lightgray solid;
   border: 1px lightgray solid;
   border-radius: 0;
@@ -140,6 +141,7 @@
 
   .my-rest {
     background: inherit;
+    height: 6rem;
   }
 
   .card-text {
