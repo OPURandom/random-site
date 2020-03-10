@@ -101,11 +101,10 @@
   box-shadow: none;
   border: none;
   margin-bottom: 20px !important;
-  // background-color: rgba(256, 256, 256, 0.8);
   background: white;
   // border-bottom: 1px lightgray solid;
   border: 1px lightgray solid;
-  border-radius: 0;
+  // border-radius: 0;
 
   .my-card {
     padding-bottom: calc(65% + 6rem);
@@ -133,14 +132,15 @@
 
     img {
       padding: 0;
-      object-fit: contain;
-      // object-fit: cover;
+      // object-fit: contain;
+      object-fit: cover;
       transition: 0.2s;
     }
   }
 
   .my-rest {
-    background: inherit;
+    // background: inherit;
+    background: #eeeeee;
     height: 6rem;
   }
 
@@ -159,17 +159,31 @@
   // .card-text::after {
   //   content: "";
   //   position: absolute;
-  //   top: 30%;
   //   left: 0.0em;
+  //   top: 30%;
   //   width: 4px;
   //   height: 50%;
   //   background-color: gray;
   // }
+
+  .my-portrait {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .card:hover {
   background-color: white;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  // .card-text::after {
+  //   top: 0%;
+  //   width: 0px;
+  //   height: 100%;
+  //   -webkit-transition: all 150ms cubic-bezier(.165,.84,.44,1);
+  //   transition: all 150ms cubic-bezier(.165,.84,.44,1);
+  // }
 
   .card-image {
     .my-square::after {
